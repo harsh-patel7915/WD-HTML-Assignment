@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+</head>
+
+<body>
+    <form action="form_submitted.html" method="post">
+        <h2 align="center">Contact Form</h2>
+        <table align="center" cellpadding="15px">
+            <tr>
+                <td><label for="fn">Full Name:</label> </td>
+                <td><input type="text" name="" id="fn" autofocus maxlength="30" required title="Enter Your Full Name"></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" name="" id="email" required title="Enter Your Email Address"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" name="" id="phone" required pattern="[0-9]{10}" title="Enter Your Phone Number(Only 10 digit)"></td>
+            </tr>
+            <tr>
+                <td><label for="subject">Subject:</label></td>
+                <td>
+                    <select name="sub" id="subject">
+                        <option value="">C++</option>
+                        <option value="">Java</option>
+                        <option value="">.net</option>
+                        <option value="">python</option>
+                        <option value="">php</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="msg">Message:</label></td>
+                <td><textarea name="" id="msg" maxlength="150" minlength="10" title="Enter Your Query or Message"></textarea></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><input type="submit" name="" id="">
+                <input type="reset" name="" id=""></td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
